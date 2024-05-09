@@ -15,7 +15,7 @@ class UnipileAPITool(BaseTool):
         url = f"https://api4.unipile.com:13447/api/v1/users/daan-baks-83422a235?linkedin_sections=about&account_id=DvSEv59mQBWTDsjAm2M4JQ"
         headers = {
             "accept": "application/json",
-            "X-API-KEY": "K6ffg2JX.ySG60criAP+G+Db8pyIkYYXBKb5j5197os77AjCaSq0="
+            "X-API-KEY": ""
         }
         response = requests.get(url, headers=headers)
         return response.text
@@ -52,7 +52,7 @@ class LinkedInMessageTool(BaseTool):
         headers = {
             "accept": "application/json",
             "content-type": "multipart/form-data; boundary=---011000010111000001101001",
-            "X-API-KEY": "K6ffg2JX.ySG60criAP+G+Db8pyIkYYXBKb5j5197os77AjCaSq0="
+            "X-API-KEY": ""
         }
         response = requests.post(url, data=payload, headers=headers)
         if response.status_code == 200:
